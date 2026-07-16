@@ -1,14 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurante Sabor & Arte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-3xl font-bold text-orange-600">Sabor & Arte</h1>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-700 hover:text-orange-600">Início</a></li>
+                    <li><a href="pages/menu.html" class="text-gray-700 hover:text-orange-600">Menu</a></li>
+                    <li><a href="pages/galeria.html" class="text-gray-700 hover:text-orange-600">Galeria</a></li>
+                    <li><a href="pages/contato.html" class="text-gray-700 hover:text-orange-600">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<body>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-orange-500 to-red-600 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-4">Bem-vindo ao Sabor & Arte</h2>
+            <p class="text-xl mb-8">Experiências gastronômicas inesquecíveis</p>
+            <a href="pages/menu.html" class="bg-white text-orange-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Ver Menu</a>
+        </div>
+    </section>
 
+    <!-- Sobre -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Nossa História</h3>
+                    <p class="text-gray-600 mb-4">
+                        Há mais de 20 anos, o Restaurante Sabor & Arte tem sido o destino preferido para quem busca uma experiência gastronômica autêntica e memorável.
+                    </p>
+                    <p class="text-gray-600">
+                        Nossa cozinha combina técnicas tradicionais com inovação, utilizando apenas ingredientes frescos e de alta qualidade.
+                    </p>
+                </div>
+                <div class="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
+                    <img src="assets/images/ambiente/image_01.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Pratos em Destaque</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-gray-300 h-48 flex items-center justify-center">
+                        <img src="assets/images/pratos/prato_01.jpg" />
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Bacalhau à Brás</h4>
+                        <p class="text-gray-600">Tradicional receita portuguesa com batata palha e azeitonas</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-gray-300 h-48 flex items-center justify-center">
+                        <img src="assets/images/pratos/prato_02.jpg" />
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Picanha Grelhada</h4>
+                        <p class="text-gray-600">Carne nobre grelhada ao ponto com acompanhamentos especiais</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-gray-300 h-48 flex items-center justify-center">
+                        <img src="assets/images/pratos/prato_03.jpg" />
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Risoto de Cogumelos</h4>
+                        <p class="text-gray-600">Risoto cremoso com cogumelos selvagens e parmesão</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Restaurante Sabor & Arte. Todos os direitos reservados.</p>
+            <p class="mt-2 text-gray-400">Rua das Flores, 123 - Lisboa, Portugal</p>
+        </div>
+    </footer>
 </body>
-
 </html>
